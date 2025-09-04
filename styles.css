@@ -10,49 +10,6 @@
     --fundo-card-concludo: rgba(0, 244, 191, 0.40);
 }
 
-/* dropdown */
-.dropdown-container {
-    position: relative;
-}
-
-.app__section-task-header__ul {
-    display: none;
-    position: absolute;
-    z-index: 10;
-    top: 100%;
-    right: 0;
-    min-width: 24rem;
-    padding: 1.6rem;
-}
-
-.app__section-task-header__ul:hover,
-.app_button-more:hover ~ .app__section-task-header__ul {
-    display: block;
-    text-align: right;
-    border-radius: 0.8rem;
-    border: 0.2rem solid var(--azul-royal, #144480);
-    background: var(--fundo-modal-2, #1B293B);
-}
-
-.app__section-task-header__li {
-    margin: 1.6rem 0;
-}
-
-.app__section-task-header__li__button {
-    width: 100%;
-    border: none;
-    cursor: pointer;
-    outline: inherit;
-    background-color: transparent;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    color: #fff;
-    gap: 0.8rem;
-}
-
-/* fim - dropdown */
-
 [data-contexto="foco"] {
     --main-bg-color: linear-gradient(180deg, #8B1FF8 0%, #041832 48.44%, #01080E 100%);
 }
@@ -275,6 +232,50 @@ h1, h2, h3, h4, h5, h6 {
 
 /* fim - toggle */
 
+/* dropdown */
+.dropdown-container {
+    position: relative;
+}
+
+.app__section-task-header__ul {
+    display: none;
+    position: absolute;
+    z-index: 10;
+    top: 100%;
+    right: 0;
+    min-width: 24rem;
+    padding: 1.6rem;
+}
+
+.app__section-task-header__ul:hover,
+.app_button-more:hover ~ .app__section-task-header__ul {
+    display: block;
+    text-align: right;
+    border-radius: 0.8rem;
+    border: 0.2rem solid var(--azul-royal, #144480);
+    background: var(--fundo-modal-2, #1B293B);
+}
+
+.app__section-task-header__li {
+    margin: 1.6rem 0;
+}
+
+.app__section-task-header__li__button {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    outline: inherit;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: #fff;
+    gap: 0.8rem;
+}
+
+/* fim - dropdown */
+
+
 /* Para Tablets */
 @media (max-width: 1024px) and (min-width: 768px) {
     .app__section-banner-container {
@@ -304,6 +305,7 @@ h1, h2, h3, h4, h5, h6 {
 .hidden {
     display: none;
 }
+
 
 .app__section-task-container {
     display: flex;
